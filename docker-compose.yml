@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  rush: 
+    build: ./    
+    # container_name: rush_c1
+    command: yarn start:dev
+    ports:
+      - '3000:3000'
+    stdin_open: true
+    tty: true
