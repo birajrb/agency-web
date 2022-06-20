@@ -99,3 +99,30 @@
   opacity: 1;
   pointer-events: all;
 }
+
+@media (min-width: 992px) {
+  .header {
+    padding-block: 20px;
+  }
+
+  .overlay,
+  .navOpenBtn,
+  .navbarTop {
+    display: none;
+  }
+
+  .navbar {
+    all: unset;
+    margin-inline-start: auto;
+  }
+
+  .navbarList {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+  }
+
+  .navbarLink {
+    color: var(--amaranth-purple);
+  }
+}

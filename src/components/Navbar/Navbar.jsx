@@ -1,6 +1,7 @@
 import cx from "classnames";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useScrollPosition } from "../../hooks/useScrollPosition";
 import styles from "./styles.module.css";
 
 const navItems = [
@@ -13,7 +14,9 @@ const navItems = [
 
 function Navbar() {
   const [openNav, setOpenNav] = useState(false);
+  const scrollPosition = useScrollPosition();
 
+  console.log(scrollPosition);
   const openNavbar = () => {
     setOpenNav(true);
   };
@@ -21,8 +24,9 @@ function Navbar() {
   const closeNavbar = () => {
     setOpenNav(false);
   };
+
   return (
-    <div className={cx(styles.header, styles.active)}>
+    <div className={cx(styles.header, scrollPosition > 400 ? styles.active : null)}>
       <div className={cx("container", styles.container)}>
         <div
           className={cx(styles.overlay, openNav && styles.overlayActive)}
@@ -41,13 +45,13 @@ function Navbar() {
             </button>
           </div>
           <ul className={styles.navbarList}>
-            <li className={styles.navbarItem} onClick={closeNavbar}>
-              {navItems.map((navItem, index) => (
-                <Link key={index} className={styles.navbarLink} to={navItem.path}>
+            {navItems.map((navItem, index) => (
+              <li key={index} className={styles.navbarItem} onClick={closeNavbar}>
+                <Link className={styles.navbarLink} to={navItem.path}>
                   {navItem.title}
                 </Link>
-              ))}
-            </li>
+              </li>
+            ))}
           </ul>
         </nav>
         <button className={cx(styles.navOpenBtn)} onClick={openNavbar}>
