@@ -1,0 +1,16 @@
+.hero {
+  position: absolute;
+  height: 500px;
+  width: 100%;
+  padding: 5em;
+  background-image: url("../../assets/images/hero-bg.png"), var(--gradient-1);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center;
+  background-size: cover, auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-size: var(--fs-5);
+}
