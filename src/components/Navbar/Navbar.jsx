@@ -1,5 +1,7 @@
 import cx from "classnames";
 import { useState } from "react";
+import { AiOutlineClose } from "react-icons/ai";
+import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from "react-router-dom";
 import { useScrollPosition } from "../../hooks/useScrollPosition";
 import styles from "./styles.module.css";
@@ -41,7 +43,7 @@ function Navbar() {
               Agency
             </Link>
             <button className={styles.navCloseBtn} onClick={closeNavbar}>
-              x
+              <AiOutlineClose />
             </button>
           </div>
           <ul className={styles.navbarList}>
@@ -55,7 +57,7 @@ function Navbar() {
           </ul>
         </nav>
         <button className={cx(styles.navOpenBtn)} onClick={openNavbar}>
-          =
+          <GiHamburgerMenu />
         </button>
       </div>
     </div>

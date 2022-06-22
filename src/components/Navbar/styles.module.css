@@ -1,5 +1,4 @@
 .header {
-  color: var(--white);
   position: absolute;
   top: 0;
   left: 0;
@@ -16,6 +15,11 @@
   box-shadow: 0 2px 30px hsla(0, 0%, 0%, 0.1);
 }
 
+.active .navOpenBtn,
+.active .logo {
+  color: var(--st-patricks-blue);
+}
+
 .container {
   display: flex;
   justify-content: space-between;
@@ -24,15 +28,17 @@
 }
 
 .logo {
-  color: var(--st-patricks-blue);
+  color: var(--white);
   font-family: var(--ff-source-sans-pro);
   font-size: var(--fs-6);
 }
 
 .navOpenBtn {
-  color: var(--st-patricks-blue);
-  font-size: 32px;
+  color: var(--white);
+  font-size: 25px;
   padding: 4px;
+  display: grid;
+  place-items: center;
 }
 
 .navbar {
@@ -114,6 +120,7 @@
   .navbar {
     all: unset;
     margin-inline-start: auto;
+    margin-left: auto;
   }
 
   .navbarList {
