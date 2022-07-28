@@ -12,17 +12,20 @@ function About() {
               <img src="/aus.jpg" className={styles.img} />
             </div>
             <div className={styles.detailContainer}>
-              <h2 className={styles.title}>Title</h2>
+              <h2 className={styles.title}>
+                Expert Education and Visa Services (EEVS) is a leading education and migration
+                consultant agency with a global presence in 12 countries.
+              </h2>
               <p className={styles.subtitle}>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, perferendis
-                eum. Modi aliquid doloremque possimus, iure corporis vitae rem laudantium ab itaque
-                quaerat esse! Quibusdam similique laboriosam voluptates error totam. Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Accusantium facere ipsam illo
-                doloremque ad praesentium id, necessitatibus quos autem magnam magni fuga dolores
-                corrupti reprehenderit nostrum ullam ab excepturi porro?Lorem ipsum dolor sit amet
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus minus ex harum
-                consectetur sequi amet vero neque dolore, cum ipsa, est quibusdam itaque a
-                perspiciatis optio dolores modi dolor accusamus!
+                We specialise in providing a wide range of services to students aspiring to study in
+                Australia from counselling them in choosing the right institution and helping with
+                their visa application to welcoming them in Australia and helping them settle with
+                the Australian life. Since 2003, our team of registered migration agents, qualified
+                education counsellors, career counsellors, solicitors and taxation experts have
+                provided end-to-end services to more than 40,000 and counting international students
+                and helped them materialise their Australian dreams. We don’t sell dreams, we help
+                students in making better choices and guide them towards materialising their goals
+                by offering viable study and career counselling.
               </p>
             </div>
           </div>

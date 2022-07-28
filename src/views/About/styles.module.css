@@ -16,6 +16,7 @@
 
 .title {
   font-size: var(--fs-6);
+  margin-bottom: 1em;
 }
 
 .subtitle {
@@ -29,6 +30,8 @@
 
   .imageContainer {
     flex: 1;
+    width: 500px;
+    height: auto;
   }
 
   .detailContainer {

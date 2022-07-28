@@ -9,12 +9,13 @@ function Home() {
         <section className={styles.hero}>
           <div className="container">
             <div className={styles.content}>
-              <p className={styles.subtitle}>We Are Product Designer From UK</p>
-              <h2 className={cx(styles.title, "h2")}>We Design Interfaces That Users Love</h2>
+              <p className={styles.subtitle}>EXPERT EDUCATION & VISA SERVICES</p>
+              <h2 className={cx(styles.title, "h2")}>Let’s Plan your Career Together</h2>
               <p className={styles.heroText}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ducimus asperiores
-                quae tempora sunt nostrum hic ab consequuntur tempore fugit delectus, sequi et
-                laudantium, suscipit saepe quidem, voluptas possimus vero.
+                We specialise in providing a wide range of services to students aspiring to study in
+                Australia from counselling them in choosing the right institution and helping with
+                their visa application to welcoming them in Australia and helping them settle with
+                the Australian life.
               </p>
               <button className="btn">Learn More</button>
               <figure className={styles.banner}>
