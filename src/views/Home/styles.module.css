@@ -1,10 +1,9 @@
 .hero {
-  background-image: url("../../assets/images/hero-bg-bottom.png"),
-    url("../../assets/images/hero-bg.png"), var(--gradient-1);
+  background-image: url("../../assets/images/hero-bg.png"), var(--gradient-1);
 
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: -280px bottom, center, center;
-  background-size: auto, cover, auto;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center;
+  background-size: cover, auto;
   padding-block: 120px var(--section-padding);
 }
 

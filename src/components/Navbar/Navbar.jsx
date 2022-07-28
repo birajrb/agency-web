@@ -35,12 +35,12 @@ function Navbar() {
           onClick={closeNavbar}
         ></div>
         <Link to="/" className={styles.logo}>
-          Agency
+          <img src="/logo2.png" className={styles.image} />
         </Link>
         <nav className={cx(styles.navbar, openNav && styles.navActive)}>
           <div className={styles.navbarTop}>
             <Link to="/" className={styles.logo}>
-              Agency
+              <img src="/logo2.png" className={styles.image} />
             </Link>
             <button className={styles.navCloseBtn} onClick={closeNavbar}>
               <AiOutlineClose />

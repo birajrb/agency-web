@@ -92,6 +92,10 @@
   width: 100%;
 }
 
+.section {
+  padding: var(--section-padding) 0;
+}
+
 /*------------------------------------------*\
   RESET CODE
 \*------------------------------------------*/
@@ -179,5 +183,9 @@ body {
   .container {
     max-width: 950px;
     margin: 0 auto;
+  }
+
+  .section {
+    padding: calc(var(--section-padding) * 2) 0;
   }
 }
